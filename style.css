@@ -1,0 +1,73 @@
+#calculator {
+    height: 350px; /*высота*/
+    width: 240px; /*ширина*/
+    background: linear-gradient(180deg, rgba(22,15,168,1) 0%, rgba(3,3,74,1) 40%, rgba(1,4,13,1) 100%); /*задний фон*/
+    padding: 5px; /*внутриние отступы */
+    margin: 100px auto; /*наружние отступы */
+    border-bottom: 3px solid #e30eebdc; /*нижняя линия*/
+    border-right: 3px solid #e30eebdc; /*правая линия*/
+    border-radius: 5px; /*закругления углов*/
+    font-family: 'Delius'; /*шрифт с font google*/
+}
+
+#screen {
+    width: 100%; /*ширина*/
+    height: 70px; /*высота*/
+    display: grid; /*для построения столбцов и строчек div контейнеров*/
+    justify-items: end;  /* для позиционирования в gridах по горизонтали*/
+    align-items: end;  /*...по вертикали*/
+    color: #160fa8; /*цвет введеных цифр*/
+    background-color: rgb(190, 202, 202); /*задний фон*/
+    border-radius: 5px; /*закругления поля для ввода*/
+    margin-bottom: 10px; /*отступ сверху*/
+}
+
+p {
+    text-align: right; 
+    font-size: 30px;
+    margin: 0;
+}
+
+.btn {
+    display: grid;  /*для построения столбцов и строчек div контейнеров*/
+    grid-template-columns: repeat(4, 1fr); /*для построения столбцов*/
+    grid-gap: 5px;   /*оступы между элементами*/
+    justify-items: center; /* для позиционирования в gridах по горизонтали*/
+}
+
+.kn {
+    width: 50px; /*ширина кнопок*/
+    height: 50px; /*высота кнопок*/
+    font-size: 21px; /*Размер шрифта*/
+    text-align: center; /*выравниваем по центру*/
+    line-height: 50px; /*выравниваем по высоте*/
+    border-radius: 40%; /*Закругления кнопок*/
+    color: #000; /*цвет цифр/знаков*/
+    cursor: pointer; /*изменение курсора при наведении*/
+    user-select: none; /*что бы не выделять при нажатии*/
+}
+
+.kn:active {
+    filter: brightness(80%); /*изменение яркости при нажатии*/
+}
+
+
+.num {
+    background-color: #e2dfdf; /*цвет заднего фона*/
+
+}
+
+.equals {
+    background-color: rgb(41, 202, 41); /*цвет заднего фона*/
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.del_all {
+    background-color: rgb(233, 108, 108); /*цвет заднего фона*/
+}
+
+.sign {
+    background-color: rgb(228, 149, 2);  /*цвет заднего фона*/
+}

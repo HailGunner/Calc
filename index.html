@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/index.js"></script>
+</head>
+<body>
+    <div id="calculator"> 
+        <div id="screen">
+            <p>0</p>
+        </div>
+        <div class="btn">
+            <div class="kn del_all">AС</div>
+            <div class="kn sign pl_min">+/-</div>
+            <div class="kn sign percent">%</div>
+            <div class="kn sign divide">÷</div>
+
+            <div class="kn num seven">7</div>
+            <div class="kn num eight">8</div>
+            <div class="kn num nine">9</div>
+            <div class="kn sign multiply">X</div>
+
+            <div class="kn num four">4</div>
+            <div class="kn num five">5</div>
+            <div class="kn num six">6</div>
+            <div class="kn sign minus">-</div>
+
+            <div class="kn num one">1</div>
+            <div class="kn num two">2</div>
+            <div class="kn num three">3</div>
+            <div class="kn sign plus">+</div>
+
+            <div class="kn num null">0</div>
+            <div class="kn sign point">.</div>
+            <div class="kn equals">=</div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 1. Изначально делал с инпут полем и долго возился с этим было много проблем со специальными знаками в этом поле да и в целом с обьективностью информации.
+
+
+2. Кнопки изначально были под чилд тегом "button", и были разбиты по 4 в ряд (последний 3) под родительским тегом div, что бы создать рядность.
+так же класс на кнопки цифры был num, на спец знаки тоже был свой класс  -->
