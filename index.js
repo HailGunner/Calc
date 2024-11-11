@@ -55,7 +55,7 @@ document.querySelector('.btn').onclick = (event) => {
 
   if(key === '=') { 
     if (b==='') b = a;
-    switch (sign) {  // условный оператор для выполнения матиматических вычеслений
+    switch (sign) {  // условный оператор для выполнения математических вычеслений
       case "+":
         a = (+a) + (+b);
         break;
